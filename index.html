@@ -6,36 +6,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube ClOne</title>
 <link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/085384e239.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="">
+    <div id="bodyelement">
+    <div class="side-menu" id="side-menu">
+        <div class="logopart">
+            <span><i class="fa-solid fa-bars" id="bars" onclick="closeSideMenu()"></i></span>
+            <img src="YouTube-Logo.png">
+        </div>
+        <div class="sidebar-part1">
+            <i class=" fa-sharp fa-solid fa-house"></i>Home
+            
+        </div>
+        <div class="sidebar-part2">
+            <img src="shorts4.png"> Shorts
+        
+        </div>
+        <div class="sidebar-part3">
+            <img src="subscription.png"> Subscriptions
+        
+        </div>
+        <hr>
+        <div class="sidebar-part4">
+            <img src="library.png"> Library
+        </div>
+        <div class="sidebar-part4">
+            <img src="history.png"> History
+        </div>
+        <div class="sidebar-part4">
+        <img src="your videos.png"> Your Videos
+        </div>
+        <div class="sidebar-part4">
+            <img src="watch later.png"> Watch Later
+        </div>
+        <div class="sidebar-part4">
+            <img src="liked videos.png"> Liked Videos
+        </div>
+        <div class="sidebar-part4">
+            <img src="show more.png"> Show More
+        </div>
+        <hr>
+        <!-------subscription part------------->
+        <h4>Subscriptions</h4>
+        <div class="sidebar-part4">
+           
+            <img src="denlion tv.png"> DenLion TV
+        </div>
+        <div class="sidebar-part4">
+        
+            <img src="get movies.png"> Get Movies
+       
+        </div>
+        <div class="sidebar-part4">
+        
+            <img src="maya and mary.png"> Maya and Mary
+        
+        </div>
+        <div class="sidebar-part4">
+        
+            <img src="kids tv.png"> Kids Entertaiment
+        
+        </div>
+        <div class="sidebar-part4">
+        
+            <img src="show more.png"> Show 233 More
+        
+        </div>
+        <hr>
+        
+    </div>
     <div id="navbar">
-        <img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="logo"><b id="logo">YouTube</b>
-        <input type="text" id="search" name="search" placeholder="search">
+        
+        <i class="fa-solid fa-bars" id="solid-bar" onclick="displaySideBar()"></i>
+        <img  class="logo" src="youtubelogo2.png"> <b class="logo">YouTube</b>
+        <div id="search"> <i class="fa-solid fa-magnifying-glass"></i><input type="text"  name="search" placeholder=" Search"></div>
+        <span class="micro"><i class="fa-solid fa-microphone"></i></span>
+        <div class="icons">
+            <img src="vidupload.png">
+            <i class="fa-regular fa-bell"></i>
+            <img  class="user" src="user.JPG">
+            
+        </div>
+            
+          
+       
     </div>
     <div id="main1">
         <div id="main">
             <iframe  id="player" width="560" height="315" src="https://www.youtube.com/embed/HkWxvB1RJq0" title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-            <div id="likes">
-                <span id="subs">Subscribe</span>
-                <img class ="img" src="https://media.istockphoto.com/id/1136351242/vector/like-social-media-hand-line-icon-editable-stroke-pixel-perfect-for-mobile-and-web.jpg?s=612x612&w=0&k=20&c=OnKkq5JCHkLvZ1Ck_njtTQMCyLljXsXGNhGqVpwwVUA=">123
-                <img class="img" src="data:image/png;base64,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">13
+            <div id="likesdislikes">
+                <h4>Javascript Higher order functions || BY Akshay Saini </h4>
+                <div class="discription">
+                    <div class="subscriptions">
+                        <img class="user" src="user.JPG">
+                          <div class="sub1">
+                            <h4>codeWithHyder</h4>
+                            <p>Subscribers 20k</p>
+                          </div>
+                        
+                    </div>
+                    <div class="font-icons">
+                        <span class="subs">Subscribe</span>
+                        <i class="fa-solid fa-thumbs-up"> 500</i>
+                        <i class="fa-solid fa-thumbs-down"> 2</i> 
+                        <i class="fa-solid fa-share"> Share</i>
+                        <i class="fa-solid fa-circle-ellipsis">...</i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="comments">
+                <h4>20 Comments</h4>
+                <img src="menubar.png">
+                <b>Sort by</b>
+            </div>
+            <div class="add-comments">
+                <img src="aboutme.png">
+                <input type="text" placeholder="Add a comment">
+            </div>
+            <div class="old-comments">
+                <img src="background.png">
+                <P>Akshay saini the best tutor of javascript beginner and advace level,that makes one's concepts very clear</P>
+                
+                
+            </div>
+            <div class="likedislike">
+                <i class="fa-solid fa-thumbs-up"> 2</i>
+                <i class="fa-solid fa-thumbs-down"></i>
+                <span>Reply</span>
             </div>
         </div>
         <div id="sidebar">
-            <a href="#" ><iframe class="link"  src="https://www.youtube.com/embed/zdp0zrpKzIE" title="YouTube video player"
+            <div class="side-img">
+               <a href="#" ><iframe onclick="openInPlayer()" id="frm1" class="link"  src="https://www.youtube.com/embed/zdp0zrpKzIE" title="YouTube video player"
+                frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></a>
+            
+                <div class="side-bar-dis">
+                    <h4>Javascript map() filter() reduce() functions</h4>
+                    <p>By Akshay saini </p>
+                     <p>200k views &bull; 2days ago</p>
+                </div>
+            </div>
+            <div class="side-img">
+            <a href="#"><iframe onclick="openInPlayer()" id="frm2" class="link" src="https://www.youtube.com/embed/pcbswa-11AI" title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe></a>
-            <a href="#"><iframe  class="link" src="https://www.youtube.com/embed/pcbswa-11AI" title="YouTube video player"
+                <div class="side-bar-dis">
+                <h4>Undisputed , the story on a serial killer </h4>
+                <p>By John Kelin </p>
+                <p>230k views &bull; 10days ago</p>
+                </div>
+            </div>
+            <div class="side-img">
+            <a href="#"><iframe onclick="openInPlayer()" id="frm3" class="link" src="https://www.youtube.com/embed/f9ip1iSAptQ" title="YouTube video player"
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe></a>
-            <a href="#"><iframe class="link" src="https://www.youtube.com/embed/f9ip1iSAptQ" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe></a>
+                <div class="side-bar-dis">
+                    <h4>Microverse,The online school for web Development , zero upfront cost till you land a job</h4>
+                    <p>By Microverse Team </p>
+                     <p>190k views &bull; 15days ago</p>
+                </div>
+            </div>
+            <div class="side-img">
+                <a href="#"><iframe onclick="openInPlayer()" id="frm3" class="link" src="https://www.youtube.com/embed/f9ip1iSAptQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></a>
+                <div class="side-bar-dis">
+                    <h4>Javascript map() filter() reduce() functions</h4>
+                    <p>By Akshay saini </p>
+                    <p>200k views &bull; 2days ago</p>
+                </div>
+            </div>
                 
         </div>
     </div>
+    </div>
+    <script>
+        let imgSource=document.getElementById("frm1").src.value;
+        function openInPlayer(){
+            document.getElementById("player").src=imgSource;
+        }
+    </script>
+    <script>
+        let sidemenu=document.getElementById("side-menu");
+        
+        function displaySideBar() {
+            sidemenu.style.display='block';
+           
+        }
+        let bars=document.getElementById("side-menu");
+        function closeSideMenu(){
+            bars.style.display='none';
+            bodyele.style.backgroundColor = '#fff';
+        }
+    </script>
     
 </body>
 </html>
