@@ -303,14 +303,16 @@ margin-left: 30px;
     top: 0;
     left: 0;
     width:250px;
-    height:1000px;
+    height:700px;
     background-color: #ffffff;
     z-index: 2;
     scroll-behavior: auto;
     position:absolute;
+   
     transition: transform 0.8s;
     /*display: none;*/
 }
+
 .side-menu  span {
     display:flex;
     align-items: center;
@@ -404,53 +406,47 @@ margin-left: 30px;
     font-family:sans-serif;
 
  }
-/*#likesdislikes .subs{
-    width:200px;
-    height:200px;
-    border-radius:  50px;
-    background-color: #020202;
-    color: white;
-    padding: 10px;
-}
-.discription{
-    display: flex;
-    justify-content: space-around;
-}
- #likesdislikes .discription .fa-thumbs-up, .fa-thumbs-down,.user{
-    
-    
-    background-color:rgb(182, 177, 177);
-    border-radius: 50%;
-    padding: 5px;
-    margin-left: 30px;
-    color: rgb(7, 7, 7);
-    cursor: pointer;
-    font-size: 16px;
-    
-}
-#likesdislikes .fa-circle-ellipsis{
-    font-size: 16px;
-    background-color: rgb(173, 167, 167);
-    border-radius: 50px;
-        padding: 10px;
-        margin-left: 30px;
-        color: rgb(240, 229, 229);
-        cursor: pointer;
-        
-}
-.fa-share{
-    background-color: rgb(172, 162, 162);
-        border-radius: 20px;
-        padding: 10px;
-        margin-left: 30px;
-        color: rgb(12, 12, 12);
-        cursor: pointer;
-        font-size: 16px;
-        
-}
 
-#likesdislikes #subs:hover,
-.fa-thumbs-up:hover,
-.fa-thumbs-down:hover,.fa-share:hover,.fa-circle-ellipsis:hover{
-    background-color: dimgrey;
-}*/
+ /*------------------css for small screens--------------------------------*/
+
+ @media screen and (max-width:900px) {
+    #navbar {
+            display: flex;
+            
+            width: 100%;
+        }
+        #search{
+            width:20%;
+            display: none;
+        }
+        .icons{
+            width:40%;
+            font-size: 14px;
+        }
+        .micro{
+            display: none;
+        }
+        #main1{
+            display: flex;
+            flex-direction: column;
+        }
+       #main1 #main{
+            width:100%;
+        }
+        #main1 #sidebar{
+            width:100%;
+            margin-top: 200px;
+        }
+        #likesdislikes .discription{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #likesdislikes .discription .subscriptions{
+            margin-left: 0px; 
+        }
+ }  
+
+   
+
+ 
